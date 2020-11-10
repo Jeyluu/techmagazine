@@ -16,7 +16,7 @@ h3 {
 }
 /*---------------------------BARRE NAVIGATION---------------------------*/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(255, 255, 255, 0.329)),url(../Images/header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(255, 255, 255, 0.329)),url(../images/header.jpg);
     background-position: center;
     background-size: cover;
     height: 40vh;
