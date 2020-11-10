@@ -39,7 +39,21 @@
 <h2>Gestion du contenu</h2>
 
     <section class="dashboard">
-        <table class="table table-hover table-responsive-xl">
+    <!--**********Filtre**********-->
+        <div class="filtre">
+            <label>Filtre</label><br>
+                <select class="options">
+                    <option></option>
+                    <option>Titre</option>
+                    <option>Status</option>
+                    <option>Catégories</option>
+                    <option>Auteur</option>
+                    <option>Date</option>
+                </select>
+        </div>
+    
+    <!--**********Tableau**********-->
+        <table class="table table-hover table-responsive-sm">
             <thead>
                 <tr>
                     
@@ -100,6 +114,37 @@
             </tbody>
         </table>
     </section>
+    <hr></hr>
+
+
+    <section class="crea-article">
+            <div>
+                <h2 class="nvl-article">Création d'un nouvel article</h2>
+            </div>
+    <!--**********Titre form**********-->
+            <div class="title-article">
+                    <label>Titre de l'article</label><br>
+                    <input type="text"  id="title" placeholder="Titre">
+            </div>
+    <!--**********Body form**********-->
+            <div class="corps-article">
+                <label>Corps de l'article</label><br>
+                <textarea rows="10" id="text-form"></textarea>
+            </div>
+    <!--**********Insertion Img**********-->        
+            <div class="insert-img">
+                <label>Inserer une image</label><br>
+                <input type="file" class="bouton-insert">
+            </div>
+    <!--**********Bouton**********-->     
+            
+            <button type="button" class="btn">Enregistrer</button>
+            <button type="button" class="btn">Mettre en Ligne</button>
+    
+        
+
+    </section>
+
     <footer>
         <p>Mentions Légales - Tech-Magazine 2020</p>
     </footer>
