@@ -3,154 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech-Mag</title>
+    <title>Tech-Mag (Admin)</title>
 
-    <!--ICON-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<!--ICON-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-    <!--FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+<!--FONT-->
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&family=Raleway:wght@200&display=swap" rel="stylesheet">
 
-    <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-
-    <!--CSS-->
+<!--CSS-->
     <link rel="stylesheet" href="./ressources/css/style.css">
 
-
+    
 </head>
 <body>
-<header>
-    <!--**********nav-bar**********-->
-    <div class="nav-bar">
-        <div><a href="index.html">Accueil</a></div>
-        <div><a href="/">Articles</a></div>
-        <div><a href="admin.html">Admin</a></div>
-        <div><a href="/">Contact</a></div>
-    </div>
-    <!--**********Titre**********-->
-    <div class="main-title">
-        <h1>Tech-Magazine</h1>
-    </div>
-
-</header>
-<h2>Gestion du contenu</h2>
-
-    <section class="dashboard">
-    <!--**********Filtre**********-->
-        <div class="filtre">
-            <label>Filtre</label><br>
-                <select class="options">
-                    <option></option>
-                    <option>Titre</option>
-                    <option>Status</option>
-                    <option>Catégories</option>
-                    <option>Auteur</option>
-                    <option>Date</option>
-                </select>
-        </div>
-    
-    <!--**********Tableau**********-->
-        <table class="table table-hover table-responsive-sm">
-            <thead>
-                <tr>
-                    
-                    <th scope="col">Titre</th>
-                    <th scope="col">Statut</th>
-                    <th scope="col">Catégorie</th>
-                    <th scope="col">Auteur</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    
-                    <td><a href="#article-1">Nouveaux Ecrans Rétro</a></td>
-                    <td><i class="fas fa-check-circle iconv"></i></td>
-                    <td>Technologie</td>
-                    <td>Capet</td>
-                    <td>30/08/2020</td>
-                    <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
-                </tr>
-                <tr>
-                    
-                    <td><a href="#article-2"> Casque Wireless Steelseries</a> </td>
-                    <td><i class="fas fa-check-circle iconv"></i></td>
-                    <td>Technologie</td>
-                    <td>Capet</td>
-                    <td>30/08/2020</td>
-                    <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
-                </tr>
-                <tr>
-                    
-                    <td><a href="#article-3">Nouveau ventillateur  Pure Rock LED 200</a> </td>
-                    <td><i class="fas fa-check-circle iconv"></i></td>
-                    <td>Technologie</td>
-                    <td>Capet</td>
-                    <td>30/08/2020</td>
-                    <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
-                </tr>
-                <tr>
-                    
-                    <td><a href="#article-3">Le gaming en plein Boom</a></td>
-                    <td><i class="fas fa-times-circle iconnv"></i> </td>
-                    <td>Gaming</td>
-                    <td>Prod-jecTt</td>
-                    <td>30/08/2020</td>
-                    <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
-                </tr>
-                <tr>
-                    
-                    <td><a href="#article-3">LDLC une part de choix en bourse?</a></td>
-                    <td><i class="fas fa-times-circle iconnv"></i></td>
-                    <td>Technologie</td>
-                    <td>Jeux-vidéos.com</td>
-                    <td>30/08/2020</td>
-                    <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <hr></hr>
-
-
-    <section class="crea-article">
-            <div>
-                <h2 class="nvl-article">Création d'un nouvel article</h2>
-            </div>
-    <!--**********Titre form**********-->
-            <div class="title-article">
-                    <label>Titre de l'article</label><br>
-                    <input type="text"  id="title" placeholder="Titre">
-            </div>
-    <!--**********Body form**********-->
-            <div class="corps-article">
-                <label>Corps de l'article</label><br>
-                <textarea rows="10" id="text-form"></textarea>
-            </div>
-    <!--**********Insertion Img**********-->        
-            <div class="insert-img">
-                <label>Inserer une image</label><br>
-                <input type="file" class="bouton-insert">
-            </div>
-    <!--**********Bouton**********-->     
-            
-            <button type="button" class="btn">Enregistrer</button>
-            <button type="button" class="btn">Mettre en Ligne</button>
-    
+    <header>
+        <!--**********nav-bar**********-->
         
+        <div class="nav-bar">
+            <div><a href="index.html">Accueil</a></div>
+            <div><a href="/">Articles</a></div>
+            <div><a href="/">Admin</a></div>
+            <div><a href="/">Contact</a></div>
+        </div>
+        <!--**********Titre**********-->
+        <div class="main-title">
+            <div>Techology</div>
+            <div>Magazine</div>
+        </div>
+    </header>
 
-    </section>
+<!--**********Coeur de site web : Tableau**********-->
 
-    <footer>
-        <p>Mentions Légales - Tech-Magazine 2020</p>
+<h2>Gestion des articles</h2>
+
+<!--**********Filter form**********-->
+<label>Filtre</label>
+<select>
+    <option></option>
+    <option>statuts</option>
+    <option>Catégorie</option>
+    <option>Auteur</option>
+    <option>Date</option>
+</select>
+
+
+<!--********** Board **********-->
+<table class="dashboard">
+    
+    <thead>
+        <tr> <!--Ligne tableau-->
+            
+            <th scope="col">Titre</th>
+            <th scope="col">Statut</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Auteur</th>
+            <th scope="col">Date</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><!--Ligne tableau-->
+
+            <!--Colonne Tableau-->
+            <td data-label="Titre"><a href="#article-1">Nouveaux Ecrans Rétro</a></td>
+            <td data-label="Statut"><i class="fas fa-check-circle iconv"></i></td>
+            <td data-label="Categorie">Technologie</td>
+            <td data-label="Auteur">Capet</td>
+            <td data-label="Date">30/08/2020</td>
+            <td data-label="Action"><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
+        </tr>
+        <tr><!--Ligne tableau-->
+            
+            <!-- TD Colonne Tableau-->
+            <td><a href="#article-2"> Casque Wireless Steelseries</a> </td>
+            <td><i class="fas fa-check-circle iconv"></i></td>
+            <td>Technologie</td>
+            <td>Capet</td>
+            <td>30/08/2020</td>
+            <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
+        </tr>
+        <tr><!--Ligne tableau-->
+            
+            <!-- TD Colonne Tableau-->
+            <td><a href="#article-3">Nouveau ventillateur  Pure Rock LED 200</a> </td>
+            <td><i class="fas fa-check-circle iconv"></i></td>
+            <td>Technologie</td>
+            <td>Capet</td>
+            <td>30/08/2020</td>
+            <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
+        </tr>
+        <tr><!--Ligne tableau-->
+            
+            <!--TD Colonne Tableau-->
+            <td><a href="#article-3">Le gaming en plein Boom</a></td>
+            <td><i class="fas fa-times-circle iconnv"></i> </td>
+            <td>Gaming</td>
+            <td>Prod-jecTt</td>
+            <td>30/08/2020</td>
+            <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
+        </tr>
+        <tr><!--Ligne tableau-->
+            
+            <!--TD Colonne Tableau-->
+            <td><a href="#article-3">LDLC une part de choix en bourse?</a></td>
+            <td><i class="fas fa-times-circle iconnv"></i></td>
+            <td>Technologie</td>
+            <td>Jeux-vidéos.com</td>
+            <td>30/08/2020</td>
+            <td><i class="fas fa-search icon"></i> <i class="fas fa-pencil-alt icon"></i> <i class="fas fa-trash-alt icon"></i></td>
+        </tr>
+    </tbody>
+
+</table>
+
+<!--**********Coeur de site web : OUTIL CREATION ARTICLE**********-->
+<section class="crea-article">
+    <div>
+        <h2 class="nvl-article">Création d'un nouvel article</h2>
+    </div>
+<!--**********Titre form**********-->
+    <div class="title-article">
+            <label>Titre de l'article</label><br>
+            <input type="text"  id="title" placeholder="Titre">
+    </div>
+<!--**********Body form**********-->
+    <div class="corps-article">
+        <label>Corps de l'article</label><br>
+        <textarea rows="10" id="text-form"></textarea>
+    </div>
+<!--**********Insertion Img**********-->        
+    <div class="insert-img">
+        <label>Inserer une image</label><br>
+        <input type="file" class="bouton-insert">
+    </div>
+<!--**********Bouton**********-->     
+    
+    <button type="button" class="btn">Enregistrer</button>
+    <button type="button" class="btn">Mettre en Ligne</button>
+
+
+
+</section>
+    <footer class="footer">
+<p>Mentions Légales - Tech-Magazine 2020</p>
     </footer>
 </body>
-
-    <!--BOOTSTRAP-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </html>
