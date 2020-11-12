@@ -42,8 +42,7 @@ header {
     }
     
 .nav-bar div{
-    
-    width:150px;
+        width:170px;
     }
 
 .nav-bar a {
@@ -51,7 +50,7 @@ header {
     text-decoration: none;
 }
 
-a:hover {
+.hovernav:hover {
     background-color: #fbfbfb7e;
     }
 /*---------------------------TITRE HEADER---------------------------*/
@@ -135,115 +134,13 @@ footer {
 
     display: flex;
     justify-content: center;
-    height: 20vh;
+    height: 10vh;
     color: rgb(223, 223, 197);
     background-color: rgba(27, 25, 25, 0.90);
     
     
 }
 
-/*---------------------------MEDIA QUERY P1---------------------------*/
-
-
-
-
-@media (min-width:750px) {
-/*---------------------------TITRE HEADER---------------------------*/
-.main-title {
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-    .main-title div:nth-child(1){
-        
-        font-size: 100px;
-        color: #fff;
-        
-    }
-    
-    .main-title div:nth-child(2){
-        font-family: 'Raleway', sans-serif;
-        font-size: 40px;
-        color: rgb(100,220,220);
-        letter-spacing: 20px;
-        display: flex;
-        align-items: center;
-        margin-top: 80px;
-    }
-
-    .dashboard {
-    text-align: center;
-    width: 100%;
-}
-/*---------------------------ARTICLES---------------------------*/
-    .container {
-        display:flex;
-        
-    }
-    .container2 {
-        display: flex;
-    }
-    .container3 {
-        display: flex;
-    }
-    .img-articles img{
-        
-        display: flex;
-        justify-content: left;
-        width: 370px;
-        margin-right: 10px;
-    }
-}
-
-@media (min-width:1250px) {
-
-    .nav-bar {
-        z-index: 3;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-    }
-
-    .dashboard {
-        text-align: center;
-        width: 100%;
-    }
-    
-    .main {
-        float: left;
-        width: calc(100% - 347px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        z-index: 2;
-        position: relative;
-    }
-
-    .sidebar {
-
-        float: right;
-        width:347px;
-        padding: 40px;
-        height: 880px;
-        z-index: 1;
-        position: relative;
-        background: #FBFBFB;
-        
-    }
-
-
-    .sidebar li {
-    padding-bottom: 10px;
-}
-    .sidebar hr {
-        border-color: #c4c4c4;
-        margin: 40px 0;
-    }
-    
-
-    .footer {
-        clear: both;
-    }
-
-}
 /* *************************** PAGE ADMIN EN HTML CSS PURE ********************** */
 
 /*---------------------------PAGE ADMIN---------------------------*/
@@ -259,9 +156,28 @@ h2 {
 /*---------------------------BOARD---------------------------*/
 .dashboard {
     text-align: center;
+    border-collapse: collapse;
 
 }
 
+.ligne {
+    
+    border-top: 5px #2424 solid;
+    
+}
+.ligne:hover{
+    background-color:#2424;
+}
+
+.ligne2 {
+    border-top: 1px #2424 solid;
+}
+.ligne2:hover {
+    background-color:#2424;
+}
+td {
+    padding: 20px 0;
+}
 .iconv {
     color: green;
 }
@@ -300,7 +216,7 @@ h2 {
     margin-left: 20px;
 }
 
-/*---------------------------BOUTTONS---------------------------*/
+/*---------------------------BOUTONS---------------------------*/
 
 .btn {
     
@@ -317,3 +233,162 @@ h2 {
     font-weight: bold;
     background-color: rgba(255, 0, 0, 0.76);
 }
+/*------------------------CONNEXION PAGE------------------------------*/
+
+.signin {
+    text-align: center;
+    
+
+}
+
+form {
+    margin: 40px 20%;
+    padding: 20px 0px;
+    box-shadow: 2px 2px 2px 2px #2424,
+    inset 2px 2px 2px 2px #2424 ;
+    
+}
+
+.login {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+
+.idmdp {
+    margin: 10px 0px;
+}
+
+.btn-form {
+    margin: 20px;
+    padding: 20px 0px;
+    background-color: #2424;
+    border: none;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    
+}
+
+.btn-form:hover{
+    background-color: rgba(30, 59, 30, 0.705);
+    transition: 0.8s;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+}
+
+.btn-form a{
+    text-decoration: none;
+    color: #000;
+    padding: 30px 60px;
+    
+    }
+
+
+
+
+
+/*---------------------------MEDIA QUERY P1---------------------------*/
+
+
+
+
+@media (min-width:750px) {
+    /*---------------------------TITRE HEADER---------------------------*/
+    .main-title {
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+        .main-title div:nth-child(1){
+            
+            font-size: 100px;
+            color: #fff;
+            
+        }
+        
+        .main-title div:nth-child(2){
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
+            color: rgb(100,220,220);
+            letter-spacing: 20px;
+            display: flex;
+            align-items: center;
+            margin-top: 80px;
+        }
+    
+        .dashboard {
+        text-align: center;
+        width: 100%;
+    }
+    /*---------------------------ARTICLES---------------------------*/
+        .container {
+            display:flex;
+            
+        }
+        .container2 {
+            display: flex;
+        }
+        .container3 {
+            display: flex;
+        }
+        .img-articles img{
+            
+            display: flex;
+            justify-content: left;
+            width: 370px;
+            margin-right: 10px;
+        }
+    }
+    
+    @media (min-width:1250px) {
+    
+        .nav-bar {
+            z-index: 3;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        }
+    
+        .dashboard {
+            text-align: center;
+            width: 100%;
+        }
+        
+        .main {
+            float: left;
+            width: calc(100% - 347px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            position: relative;
+        }
+    
+        .sidebar {
+    
+            float: right;
+            width:347px;
+            padding: 40px;
+            height: 880px;
+            z-index: 1;
+            position: relative;
+            background: #FBFBFB;
+            
+        }
+    
+    
+        .sidebar li {
+        padding-bottom: 10px;
+    }
+        .sidebar hr {
+            border-color: #c4c4c4;
+            margin: 40px 0;
+        }
+        
+    
+        .footer {
+            clear: both;
+        }
+    
+    }
