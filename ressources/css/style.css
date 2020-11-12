@@ -87,6 +87,7 @@ a:hover {
 
 
 .img-articles img {
+    
     width: 100%;
     border-radius: 10px;
     height: 350px;
@@ -94,11 +95,13 @@ a:hover {
 
 /*---------------------------ARTICLES---------------------------*/
 .container {
-    margin-top: 20px;
+    
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 .articles {
-    padding: 40px;
+
+    padding: 20px;
 }
 
 .site-article {
@@ -106,12 +109,12 @@ a:hover {
     font-weight: bold;
 }
 .articles2 {
-    padding: 40px;
+    padding: 20px;
     background-color: rgba(223, 223, 223, 0.253);
 }
 
 .articles3 {
-    padding: 40px;
+    padding: 20px;
 }
 
 /*---------------------------SIDEBAR---------------------------*/
@@ -129,11 +132,13 @@ li {
 
 /*---------------------------FOOTER---------------------------*/
 footer {
+
     display: flex;
     justify-content: center;
     height: 20vh;
     color: rgb(223, 223, 197);
     background-color: rgba(27, 25, 25, 0.90);
+    
     
 }
 
@@ -166,17 +171,16 @@ footer {
         display: flex;
         align-items: center;
         margin-top: 80px;
-        
-        
     }
-}
-.dashboard {
+
+    .dashboard {
     text-align: center;
     width: 100%;
 }
 /*---------------------------ARTICLES---------------------------*/
     .container {
-        display: flex;
+        display:flex;
+        
     }
     .container2 {
         display: flex;
@@ -185,12 +189,13 @@ footer {
         display: flex;
     }
     .img-articles img{
+        
         display: flex;
         justify-content: left;
         width: 370px;
         margin-right: 10px;
     }
-    
+}
 
 @media (min-width:1250px) {
 
